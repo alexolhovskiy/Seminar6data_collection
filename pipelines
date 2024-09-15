@@ -1,0 +1,19 @@
+import csv
+
+class SimplePipeline:
+
+    def open_spider(self, spider):
+        # self.file = open('output.csv', 'w', newline='')
+        # self.writer = csv.DictWriter(self.file, fieldnames=['title', 'price', 'url'])
+        # self.writer.writeheader()
+        pass
+
+    def process_item(self, item, spider):
+        # Записываем данные в CSV файл
+        # self.writer.writerow(item)
+        print(item)  # Выводим данные на экран
+        return item
+
+    def close_spider(self, spider):
+        # self.file.close()  # Закрываем файл после завершения работы паука
+        print("Done")
